@@ -35,16 +35,16 @@ buttonElement.addEventListener('click',function () {
         console.log(discount)
         const finalPrice = fullPrice - discount
         alert(finalPrice)
-        testoDaRestituire.innerHTML = "Il tuo biglietto ha un prezzo di: " + finalPrice.toFixed(2)
+        testoDaRestituire.innerHTML = "Il tuo biglietto ha un prezzo di: " + finalPrice.toFixed(2) + "€"
     } else if (inputUserAgeValue === 3) {
         const discount = fullPrice * discountOver65
         console.log(discount)
         const finalPrice = fullPrice - discount
         alert(finalPrice)
-        testoDaRestituire.innerHTML = "Il tuo biglietto ha un prezzo di: " + finalPrice.toFixed(2)
+        testoDaRestituire.innerHTML = "Il tuo biglietto ha un prezzo di: " + finalPrice.toFixed(2) + "€"
     } else if (inputUserAgeValue === 2) {
         alert(fullPrice)
-        testoDaRestituire.innerHTML = "Il tuo biglietto ha un prezzo di: " + fullPrice.toFixed(2)
+        testoDaRestituire.innerHTML = "Il tuo biglietto ha un prezzo di: " + fullPrice.toFixed(2) + "€"
     } else {
         alert('Inserisci età valida')
     }

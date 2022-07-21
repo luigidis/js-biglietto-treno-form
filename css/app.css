@@ -4,3 +4,18 @@
     box-sizing: border-box;
 }
 
+.bg_color_red {
+    background-color: #B91450;
+}
+
+.pe_6 {
+    padding-right: 60px;
+}
+
+.rounded_4 {
+    border-radius: 10px;
+}
+
+.shadow_mine {
+    box-shadow: 5px 7px rgb(136, 136, 136,0.50) ;
+}
