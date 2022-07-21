@@ -11,14 +11,35 @@ buttonElement.addEventListener('click',function () {
     const inputElementDistance = document.querySelector('input[name="distance"]')
     console.log(inputElementDistance.value)
     // RECUPERO LA FASCIA D'ETA' DELL'UTENTE E LO METTERO' IN UNA VARIABILE
-    let inputUserAge = document.querySelector('#user_age')
-    console.dir(inputUserAge)
-    console.log(inputUserAge)
+    let inputUserAge =  document.querySelector('#user_age') 
+    console.log(inputUserAge.value)
+    let inputUserAgeValue = parseFloat(inputUserAge.value)
+
+    // console.dir(inputUserAge)
+    // console.log(inputUserAge)
+    
     // CALCOLO IL PREZZO PIENO DEL BIGLIETTO E LO METTO IN UNA VARIABILE
     const fullPrice = parseFloat(inputElementDistance.value) * priceKm
     console.log(fullPrice)
-
+    // A QUESTO PUNTO INIZIO IL MIO ALGORITMO PER LO SCONTO SE NECESSARIO
+    if (inputUserAgeValue === 1) {
+        const discount = fullPrice * discountTeen
+        console.log(discount)
+        const finalPrice = fullPrice - discount
+        alert(finalPrice)
+    } else if (inputUserAgeValue === 3) {
+        const discount = fullPrice * discountOver65
+        console.log(discount)
+        const finalPrice = fullPrice - discount
+        alert(finalPrice)
+    } else if (inputUserAgeValue === 2) {
+        alert(fullPrice)
+    } else {
+        alert('Inserisci età valida')
+    }
 })
+        
+        
 
 
 
@@ -27,14 +48,10 @@ buttonElement.addEventListener('click',function () {
 
 
 
-// CALCOLO LO SCONTO SE E' MINORENNE * 0.20
-const discount = fullPrice * discountTeen
-console.log(discount)
-// CALCOLO LO SCONTO SE E' OVER 65 * 0.40
-const discont = fullPrice * discountOver65
-console.log(discount)
+
+
 // GENERO IL PREZZO FINALE
-const finalPrice = finalPrice - discount
+
 // STAMPO IL RISULTATO NEL MIO FILE HTML
 
 
