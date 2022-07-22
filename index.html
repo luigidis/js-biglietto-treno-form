@@ -13,18 +13,18 @@
         <h1 class="text-white text-uppercase fs-2 text-center py-3">Calcola il prezzo del tuo biglietto</h1>
     </div>
         <div class="container bg-light rounded_4 shadow_mine">
-            <div class="row justify-content-center p-5 gy-3 ">
+            <div class="row justify-content-center p-5 gy-3 text_red">
                 <div class="col-3 text-center">
                     <div class="pb-3 r">Nome Cognome</div>
-                    <input type="text" name="username" placeholder="username" value="Jon Snow">
+                    <input type="text" name="username" placeholder="Nome E Cognome" value="Jon Snow" class="text-center border_red border_button fw-bold">
                 </div>
                 <div class="col-3 text-center">
                     <div class="pb-3">Km da percorrere</div>
-                    <input type="number" name="distance" placeholder="Numero di km" value="20">
+                    <input type="number" name="distance"  min="0" placeholder="Numero di km" value="0" class="text-center border_button fw-bold">
                 </div>
                 <div class="col-3 text-center">
-                    <div class="pb-3">Fascia D'Età</div>
-                    <select name="anni" id="user_age">
+                    <div class="pb-3">Fascia d'età</div>
+                    <select name="anni" id="user_age" class="text-center border_button fw-bold">
                         <option value="---">---</option>
                         <option value="1">Minorenne</option>
                         <option value="2">Maggiorenne</option>
@@ -33,14 +33,39 @@
                 </div>
                 <div class="row justify-content-center pt-5">
                     <div class="col-2 text-end">
-                        <input type="submit" value="Genera">
+                        <input type="submit" value="Genera" class="fw-bold text_red px-2">
                     </div>
                     <div class="col-2">
-                        <input type="button" value="Annulla">
+                        <input type="button" value="Annulla" class="fw-bold text_red px-2">
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container my-5">
+            <h2 class="text-uppercase fw-bold fs-2 text-center py-3 text-white">Il tuo biglietto</h2>
+            <div class="row bg-light">
+                <div class="col-12">Dettaglio Passeggeri</div>
+                <div class="col-4">
+                    Nome Passeggero 
+                </div>
+                <div class="col-8 row">
+                    <div class="col">
+                        Offerta
+                    </div>
+                    <div class="col">
+                        Carrozza
+                    </div>
+                    <div class="col">
+                        Codice CP
+                    </div>
+                    <div class="col">
+                        Costo biglietto
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            
                 
                 
                 
@@ -49,7 +74,7 @@
 
 
         <div class="container">
-            <h4 id="testo_da_restituire">Il tuo Biglietto ha un prezzo di:</h4>
+            <h4 id="testo_da_restituire">Il tuo biglietto ha un prezzo di:</h4>
         </div>
     
             

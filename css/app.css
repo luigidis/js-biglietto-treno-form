@@ -8,6 +8,15 @@
     background-color: #B91450;
 }
 
+.text_red {
+    color:  #B91450;
+}
+
+.border_button {
+    border: solid 1px #B91450;
+    border-radius: 5px;
+}
+
 .pe_6 {
     padding-right: 60px;
 }
